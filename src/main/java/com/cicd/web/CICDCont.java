@@ -35,8 +35,8 @@ public class CICDCont {
 			
 		}
 
-
-		return "<h3>" + msg + "</h3>";
-		
-	}
-}
+//
+//		return "<h3>" + msg + "</h3>";
+//		
+//	}
+//}
