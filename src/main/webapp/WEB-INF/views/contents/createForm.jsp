@@ -19,13 +19,9 @@
              f.price.focus();
              return false;
      }
-<<<<<<< HEAD
-     if (f.detail.value == '') {
-         alert('내용을 입력해 주세요.');
-=======
+
      if (f.detail.value == ""){
          alert("상품내용을 입력하세요");
->>>>>>> b70699fee7743d385b7249682f1752e326042ce4
          f.detail.focus();
          return false;
  	 }
