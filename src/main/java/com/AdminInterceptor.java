@@ -1,12 +1,13 @@
 package com;
  
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
  
+import org.springframework.web.servlet.ModelAndView;
+
 import com.utility.Utility;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
  
 public class AdminInterceptor extends HandlerInterceptorAdapter {
 // URL 요청후 콘트롤러 작동전에 실행함.
