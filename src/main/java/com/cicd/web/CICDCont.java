@@ -35,7 +35,7 @@ public class CICDCont {
 
 		} else if (sw == 4) {
 			msg = "/cicd Github action + EC2 최종 테스트 2";
-			log.info(msg);
+			log.info(msg);   
 
 		}
 
