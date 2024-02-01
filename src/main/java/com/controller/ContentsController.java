@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.UploadCon;
 import com.model.contents.ContentsDTO;
@@ -48,7 +49,7 @@ public class ContentsController {
 		
 		int cnt = service.create(dto);
 		//if(cnt>0) return "redirect:/contents/list";
-		if(cnt>0) return "redirect:/";
+		if(cnt>0) return "redirect:./list";
 		else {
 			return "error";
 		}
@@ -109,11 +110,17 @@ public class ContentsController {
 	}
 	
 	@PostMapping("/contents/update")
-	public String update(ContentsDTO dto) {
+	public String update(ContentsDTO dto, String col, 
+	    String word, String nowPage,RedirectAttributes att) {
 		
 		int cnt = service.update(dto);
 		
-		if(cnt>0) return "redirect:/contents/list";
+		if(cnt>0) {
+		  att.addAttribute("col",col);
+		  att.addAttribute("word",word);
+		  att.addAttribute("nowPage",nowPage);
+		  return "redirect:/contents/list";
+		}
 		else {
 			return "error";
 		}

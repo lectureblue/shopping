@@ -60,7 +60,7 @@
     </div>
     <div class="col">
     <button type="submit" class="btn btn-primary" >검색</button>
-    <button type="button" class="btn btn-dark" onclick="location.href='../admin/create'">등록</button>
+    <button type="button" class="btn btn-dark" onclick="location.href='/admin/contents/create'">등록</button>
     
     </div>
     </div>
