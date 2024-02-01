@@ -6,7 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-  <script type="text/JavaScript">
+<script src="/js/summernote.js" defer></script>
+<script type="text/JavaScript">
  
  function checkIn(f){
      if (f.pname.value == ""){
@@ -19,16 +20,13 @@
              f.price.focus();
              return false;
      }
-<<<<<<< HEAD
-     if (f.detail.value == '') {
-         alert('내용을 입력해 주세요.');
-=======
+
      if (f.detail.value == ""){
          alert("상품내용을 입력하세요");
->>>>>>> b70699fee7743d385b7249682f1752e326042ce4
+
          f.detail.focus();
          return false;
- 	 }
+ 	   }
 
      if (f.stock.value == ""){
              alert("재고를 입력하세요");
@@ -80,7 +78,7 @@
   <div class="mb-3 mt-3">
     <label for="detail">상세정보</label>
     <div class="col-sm-8">
-    <textarea rows="12" cols="7" id="detail" name="detail" class="form-control"></textarea>
+    <textarea rows="12" cols="7" id="summernote" name="detail" class="form-control"></textarea>
     </div>
   </div>
   
