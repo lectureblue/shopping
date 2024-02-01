@@ -30,7 +30,7 @@
 				src="/contents/storage/${dto.filename}" class="img-rounded"
 				width="150px" height="150px"></li>
 			<li class="list-group-item">상품명: ${dto.pname}</li>
-			<li class="list-group-item" style="height: 300px; overflow-y: scroll">${dto.detail}</li>
+			<li class="list-group-item" style="height: 500px; overflow-y: scroll">${dto.detail}</li>
 			<li class="list-group-item">가격: ${dto.price}</li>
 			<li class="list-group-item">제고: ${dto.stock}</li>
 			<li class="list-group-item">등록일: ${dto.rdate}</li>
