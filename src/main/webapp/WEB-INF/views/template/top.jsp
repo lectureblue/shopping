@@ -24,7 +24,11 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/71c72323b0.js" crossorigin="anonymous"></script>
-    <style type="text/css">
+   <!-- include summernote css/js -->
+   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+   <style type="text/css">
           #grade{
           
            color :white;
