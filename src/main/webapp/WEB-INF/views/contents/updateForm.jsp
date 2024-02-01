@@ -6,7 +6,15 @@
   <title>homepage</title>
   <meta charset="utf-8">
 
-  <script src="/js/summernote.js" defer></script>
+  <script>
+  $(function() {
+    $('#summernote').summernote({
+      tabsize: 2,
+      height: 400,
+      lang: 'ko-KR', // default: 'en-US'
+    });
+  });
+    </script>
   <script type="text/JavaScript">
 
  function checkIn(f){

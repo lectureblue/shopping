@@ -6,7 +6,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src="/js/summernote.js" defer></script>
+<script>
+  $(function() {
+    $('#summernote').summernote({
+      placeholder: '상품내용 입력',
+      tabsize: 2,
+      height: 400,
+      lang: 'ko-KR', // default: 'en-US'
+    });
+  });
+</script>
 <script type="text/JavaScript">
  
  function checkIn(f){
