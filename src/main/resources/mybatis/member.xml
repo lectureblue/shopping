@@ -6,6 +6,13 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="com.model.member.MemberMapper">
 
+	<select id="user" parameterType="String" resultType="Map">
+		select
+		id, mname, grade
+		from member
+		where id = #{id}
+	</select>
+
 	<update id="updateFile" parameterType="Map">
 		update member
 		set fname = #{fname}

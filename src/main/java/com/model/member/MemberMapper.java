@@ -15,4 +15,5 @@ public interface MemberMapper {
 	int update(MemberDTO dto);
 	MemberDTO mypage(String id);
 	int updateFile(Map map);
+	Map<String, String> user(String id);
 }

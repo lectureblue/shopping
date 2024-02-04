@@ -78,4 +78,10 @@ public class MemberServiceImpl implements MemberService {
 		return mapper.updateFile(map);
 	}
 
+	@Override
+	public Map<String, String> user(String id) {
+		// TODO Auto-generated method stub
+		return mapper.user(id);
+	}
+
 }

@@ -38,6 +38,19 @@ public class MemberController {
 
 		return "/home";
 	}
+	
+	@GetMapping(value = "/user", produces = "application/json;charset=utf-8")
+	@ResponseBody
+	public Map<String, String> user(HttpServletRequest req,HttpSession session) {
+		HttpSession sess = req.getSession();
+		String id = (String)sess.getAttribute("id");
+		//System.out.println("id:"+id);
+		Map<String, String> map  = service.user(id);
+
+		System.out.println("map:"+map);
+		return map;
+
+	}
 
 	@GetMapping(value = "/member/idcheck", produces = "application/json;charset=utf-8")
 	@ResponseBody
