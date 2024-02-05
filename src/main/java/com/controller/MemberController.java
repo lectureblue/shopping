@@ -45,7 +45,7 @@ public class MemberController {
 		HttpSession sess = req.getSession();
 		String id = (String)sess.getAttribute("id");
 		System.out.println("id:"+id);
-		Map<String, String> map  = service.user("user1");
+		Map<String, String> map  = service.user(id);
 
 		System.out.println("map:"+map);
 		return map;
