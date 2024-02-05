@@ -43,9 +43,9 @@ public class MemberController {
 	@ResponseBody
 	public Map<String, String> user(HttpServletRequest req,HttpSession session) {
 		HttpSession sess = req.getSession();
-		String id = (String)sess.getAttribute("user1");
+		String id = (String)sess.getAttribute("id");
 		System.out.println("id:"+id);
-		Map<String, String> map  = service.user(id);
+		Map<String, String> map  = service.user("user1");
 
 		System.out.println("map:"+map);
 		return map;
