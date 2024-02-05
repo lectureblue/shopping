@@ -82,7 +82,7 @@ integrity="sha256-IKhQVXDfwbVELwiR0ke6dX+pJt0RSmWky3WB2pNx9Hg=" crossorigin="ano
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Community</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="${root}/member/mypage">Mypage</a></li>
-            <li><a class="dropdown-item" href="http://3.142.188.87:3000">Review</a></li>
+            <li><a class="dropdown-item" href="http://localhost:3000">Review</a></li>
             <li><a class="dropdown-item" href="${root}/notice/list">Notice</a></li>
             <li><a class="dropdown-item" href="#">Q&A</a></li>
           </ul>
